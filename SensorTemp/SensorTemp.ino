@@ -7,11 +7,11 @@
 
 
 
-#define WIFI_SSID "Totalplay-2.4G-6458"
-#define WIFI_PASSWORD "W4hBncjktjwzWXSQ"
+#define WIFI_SSID "Tu red de wifi"
+#define WIFI_PASSWORD "tu contraseña"
 
-#define FIREBASE_HOST "https://sensortemp-9c59a-default-rtdb.firebaseio.com/" 
-#define FIREBASE_AUTH "AIzaSyB2lJ9U_lItr5kZheDnUTFVqAhQLqqHL84"
+#define FIREBASE_HOST "Host de firebase" 
+#define FIREBASE_AUTH "La Key/llave de tu base de datos"
 
 #define ONE_WIRE_BUS 5
 

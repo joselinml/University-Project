@@ -1,11 +1,11 @@
 #include <FirebaseESP32.h>
 #include <WiFi.h>
 
-#define WIFI_SSID "Totalplay-2.4G-6458"
-#define WIFI_PASSWORD "W4hBncjktjwzWXSQ"
+#define WIFI_SSID "RED WIFI"
+#define WIFI_PASSWORD "CONTRASEÑA WIFI"
 
-#define FIREBASE_HOST "https://sensortemp-9c59a-default-rtdb.firebaseio.com/" 
-#define FIREBASE_AUTH "AIzaSyB2lJ9U_lItr5kZheDnUTFVqAhQLqqHL84"
+#define FIREBASE_HOST "HOST DE FIREBASE" 
+#define FIREBASE_AUTH "LA LLAVE O KEY DE FIREBASE"
 const int potPin= 34;
 float ph;
 float Value = 0;

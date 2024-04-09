@@ -5,11 +5,11 @@
 #include <DallasTemperature.h> 
 //Fin de include para el sensor de temperatura
 
-#define WIFI_SSID "Totalplay-2.4G-6458"
-#define WIFI_PASSWORD "W4hBncjktjwzWXSQ"
+#define WIFI_SSID "**********" // red Wi-Fi
+#define WIFI_PASSWORD "***************"  //Password de wi-fi
 
-#define FIREBASE_HOST "https://sensortemp-9c59a-default-rtdb.firebaseio.com/" 
-#define FIREBASE_AUTH "AIzaSyB2lJ9U_lItr5kZheDnUTFVqAhQLqqHL84"
+#define FIREBASE_HOST "**************************" //Host/url de la base de datos
+#define FIREBASE_AUTH "************************"  /llave o key de la base de datos
 
 //Declaraciones para el sensor de pH
 const int potPin= 34;

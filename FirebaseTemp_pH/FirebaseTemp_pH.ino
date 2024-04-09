@@ -9,7 +9,7 @@
 #define WIFI_PASSWORD "***************"  //Password de wi-fi
 
 #define FIREBASE_HOST "**************************" //Host/url de la base de datos
-#define FIREBASE_AUTH "************************"  /llave o key de la base de datos
+#define FIREBASE_AUTH "************************"  //llave o key de la base de datos
 
 //Declaraciones para el sensor de pH
 const int potPin= 34;

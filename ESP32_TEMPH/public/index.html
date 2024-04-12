@@ -13,6 +13,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+    
     <script>
      // REPLACE WITH YOUR web app's Firebase configuration
      const firebaseConfig = {
@@ -82,8 +85,43 @@
       </div>
       
     </div>
+        <!--CHARTS-->
+   <!--  <div id="charts-div" style="display:none"> -->
+    <div id="charts-div" >
+      <!--SET NUMBER OF READINGS INPUT FIELD-->
+      <div>
+        <p> GRAFICAS</p>
+      </div>
+      <!--TEMPERATURE-CHART-->
+      <div class="cards">
+        <div class="card">
+          <p><i class="fas fa-thermometer-half" style="color:#059e8a;"></i> TEMPERATURE CHART</p>
+          <div id="chart-temperature" class="chart-container"></div>
+        </div>
+      </div>
+  
+    </div>
+      <!--CHARTS-->
+   <!--  <div id="charts-div" style="display:none"> -->
+    <div id="charts-div" >
+      <!--SET NUMBER OF READINGS INPUT FIELD-->
+      <div>
+        <p> GRAFICAS</p>
+      </div>
+      <!--TEMPERATURE-CHART-->
+      <div class="cards">
+        <div class="card">
+          <p><i class="fas fa-thermometer-half" style="color:#059e8a;"></i> pH CHART</p>
+          <div id="chart-pH" class="chart-container"></div>
+        </div>
+      </div>
+  
+    </div>
   </div>
+
     <script src="scripts/auth.js"></script>
     <script src="scripts/index.js"></script>
+    <script src="scripts/charts-definitions.js"></script>
+
   </body>
 </html>

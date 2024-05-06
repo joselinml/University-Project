@@ -1,5 +1,7 @@
 window.addEventListener('load', onload);
 
+
+
 function onload(event){
   chartT = createTemperatureChart();
   chartpH = createpHChart();
@@ -15,7 +17,8 @@ function createTemperatureChart() {
     },
     series: [
       {
-        name: 'BME280'
+        name: 'BME280',
+        data:[]
       }
     ],
     title: { 
@@ -30,9 +33,20 @@ function createTemperatureChart() {
       }
     },
     xAxis: {
+      title: {
+        text:'Hora, minutos y segundos',
+      },
       type: 'datetime',
-      dateTimeLabelFormats: { second: '%H:%M:%S' }
+      labels: {
+        formatter: function () {
+          // Convertir la fecha y hora a la zona horaria de México
+          var dateTimeMX = moment.tz(this.value, "America/Mexico_City");
+          // Formatear solo la hora
+          return dateTimeMX.format('HH:mm:ss');
+        }
+      }
     },
+    
     yAxis: {
       title: { 
         text: 'Temperatura' 
@@ -66,18 +80,29 @@ function createpHChart(){
         }
       },
       series: { 
-        color: '#50b8b4' 
+        color: '#bf9000' 
       }
     },
     xAxis: {
+      title: {
+        text:'Hora, minutos y segundos',
+      },
       type: 'datetime',
-      dateTimeLabelFormats: { second: '%H:%M:%S' }
+      labels: {
+        formatter: function () {
+          // Convertir la fecha y hora a la zona horaria de México
+          var dateTimeMX = moment.tz(this.value, "America/Mexico_City");
+          // Formatear solo la hora
+          return dateTimeMX.format('HH:mm:ss');
+        }
+      }
     },
     yAxis: {
       title: { 
-        text: 'pH (%)' 
+        text: 'pH ' 
       }
     },
+    
     credits: { 
       enabled: false 
     }
